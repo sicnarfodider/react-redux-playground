@@ -1,6 +1,6 @@
 import React from 'react';
 import { connect } from 'react-redux';
-import { pickNumber, guessNumber } from '../actions';
+import { pickNumber} from '../actions';
 
 
 class Guess extends React.Component{
@@ -79,9 +79,8 @@ class Guess extends React.Component{
 
 function mapStateToProps(state){
   return{
-    number: state.number.number,
-    guess: state.guess
+    number: state.number,
   }
 }
 
-export default connect(mapStateToProps,{pickNumber, guessNumber})(Guess);
+export default connect(mapStateToProps,{pickNumber})(Guess);
