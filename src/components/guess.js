@@ -68,7 +68,7 @@ class Guess extends React.Component{
             this.handleGuess(input);
           }}>
             <label>Input A Guess Number</label>
-            <input onChange={this.handleInput} value={input} max="1000" min="1" className="form-control" type="number" name="guess"/>
+            <input onChange={this.handleInput} value={input} max="1000" min="1" className="form-control" type="number" name="guess" placeholder="guess between 1-1000"/>
             <button className="btn btn btn-success">Submit</button>
           </form>
         </div>
