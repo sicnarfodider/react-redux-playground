@@ -11,7 +11,6 @@ const App = () => (
             <img src={logo} className="logo rotate"/>
             <h1>Welcome to React <span className="redux" >Redux</span></h1>
             <Guess />
-            <Input/>
         </div>
     </div>
 );
