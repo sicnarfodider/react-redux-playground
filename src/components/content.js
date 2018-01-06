@@ -4,7 +4,6 @@ import projects from './project-content';
 import prototypes from './prototype-content';
 
 export default props=>{
-  debugger;
   const projectContent = projects.filter(content=>content.name===props.match.params.content);
   const prototypesContent = prototypes.filter(content=>content.name===props.match.params.content);
   const project = projectContent.map((content,i)=>{
