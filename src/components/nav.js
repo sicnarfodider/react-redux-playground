@@ -1,19 +1,20 @@
 import React from 'react';
 import {NavLink} from 'react-router-dom';
 
-<NavLink className="nav-link" activeClassName="active" exact to="/:content?"> </NavLink>
 
 export default props=>{
   const project = props.projects.map((content,i)=>{
-    return <li  className="list-group-item" key={i} ><NavLink className="nav-link" activeClassName="active" exact to="/projects/:?"> {content.name} </NavLink> </li>
+    return <li  className="list-group-item" key={i} ><NavLink className="nav-link" activeClassName="active" to={`/projects/${content.name}`}> {content.name} </NavLink> </li>
   });
   const prototype = props.prototypes.map((content,i)=>{
-    return <li  className="list-group-item" key={i} ><NavLink className="nav-link" activeClassName="active" exact to="/prototypes/:?"> {content.name}  </NavLink></li>
+    return <li  className="list-group-item" key={i} ><NavLink className="nav-link" activeClassName="active" to={`/prototypes/${content.name}`}> {content.name}  </NavLink></li>
   });
   return(
     <div id="accordion" role="tablist">
       <ul className="nav-type" role="tab">
-        <li > <a data-toggle="collapse" href="#collapseOne" role="button" aria-expanded="true" aria-controls="collapseOne" >Prototypes</a> </li>
+        <li >
+            <a data-toggle="collapse" href="#collapseOne" role="button" aria-expanded="true" aria-controls="collapseOne" >Prototypes</a>
+        </li>
         <div id="collapseOne" className="collapse" role="tabpanel" aria-labelledby="headingOne" data-parent="#accordion" >
           <ul className="list-group">
             {prototype}

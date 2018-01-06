@@ -18,9 +18,7 @@ const App = () => (
                   <div className="nav-container col-lg-3">
                       <Nav projects={projects} prototypes={prototypes}/>
                   </div>
-              <Route exact path="/" component={Content}/>
-              <Route path="/projects/:content?"  component={Content}/>
-              <Route path="/prototypes/:content?"  component={Content}/>
+              <Route path="/:type?/:content?" component={Content}/>
               </div>
         </div>
     </div>

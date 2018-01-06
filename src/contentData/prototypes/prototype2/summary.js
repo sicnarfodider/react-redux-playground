@@ -6,7 +6,7 @@ export default props=>{
     <div className="card">
       <div className="card-block">
       <div className="content-summary">
-          <h1 className="card-title">Content Summary</h1>
+          <h1 className="card-title">Content  Prototype Summary</h1>
           <p>Shop, dripper mug body half and half coffee seasonal. Beans decaffeinated aromatic redeye seasonal aroma irish mocha decaffeinated. Grinder aftertaste grounds grinder galão brewed siphon single shot brewed. Steamed kopi-luwak beans medium, redeye coffee froth trifecta shop pumpkin spice.
 
              Iced mazagran, latte beans redeye strong java saucer breve con panna. Crema macchiato frappuccino grounds black robust in robusta. Turkish instant skinny, medium brewed viennese cup crema skin</p>
