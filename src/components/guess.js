@@ -1,6 +1,6 @@
 import React from 'react';
 import { connect } from 'react-redux';
-import { pickNumber} from '../actions';
+import { pickNumber, recordNumber} from '../actions';
 
 
 class Guess extends React.Component{
@@ -13,6 +13,7 @@ class Guess extends React.Component{
     }
     this.handleInput= this.handleInput.bind(this)
     this.handleGuess=this.handleGuess.bind(this)
+    this.reset= this.reset.bind(this)
   }
 
     componentDidMount(){
@@ -21,12 +22,13 @@ class Guess extends React.Component{
 
   handleGuess(input){
     // this.props.guessNumber(input)
-    if(input>this.props.number){
+    const parseInput= parseInt(input);
+    if(parseInput>this.props.number){
       this.setState({
         input: "",
         resp: "too high"
       })
-    }else if(input<this.props.number){
+    }else if(parseInput<this.props.number){
       this.setState({
         input: "",
         resp: "too low"
@@ -42,10 +44,12 @@ class Guess extends React.Component{
     }
   }
   reset(){
+    console.log('reset')
     this.setState({
       resp: ""
     })
-    this.props.pickNumber()
+    this.props.recordNumber(this.props.number);
+    this.props.pickNumber();
   }
   handleInput(event){
     const value = event.target.value
@@ -57,10 +61,10 @@ class Guess extends React.Component{
 
   render(){
     const{input} = this.state
-    console.log(this.props.number)
+    console.log(this.props.number, this.props)
     return(
       <div>
-        <h1>Guess A Number</h1>
+        <h1>Guessing Game</h1>
         <h3>Guess Range: {this.state.resp}</h3>
         <div className="container ">
           <form className="form-group" onSubmit={(e)=>{
@@ -70,6 +74,13 @@ class Guess extends React.Component{
             <label>Input A Guess Number</label>
             <input onChange={this.handleInput} value={input} max="1000" min="1" className="form-control" type="number" name="guess" placeholder="guess between 1-1000"/>
             <button className="btn btn btn-success">Submit</button>
+            <div>
+              {this.props.records ? this.props.records.map((lastnum,i)=>{
+                return(
+                  <p key={i}>Game {i+1} Number : {lastnum} </p>
+                )
+              }) : <p> no record </p>}
+            </div>
           </form>
         </div>
       </div>
@@ -79,8 +90,9 @@ class Guess extends React.Component{
 
 function mapStateToProps(state){
   return{
-    number: state.number,
+    number: state.number.number,
+    records: state.records.records
   }
 }
 
-export default connect(mapStateToProps,{pickNumber})(Guess);
+export default connect(mapStateToProps,{pickNumber, recordNumber})(Guess);

@@ -1,12 +1,10 @@
 import {combineReducers} from 'redux';
 import pickNumber from './pick-number';
-import guessNumber from './guess-number';
+import recordNumber from './record';
 
 export default combineReducers(
   {
-    number: pickNumber
-  },
-  {
-    guess: guessNumber
+    number: pickNumber,
+    records: recordNumber
   }
 );

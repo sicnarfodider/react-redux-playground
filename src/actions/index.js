@@ -14,3 +14,10 @@ export function guessNumber(num){
     payload: num
   }
 }
+
+export function recordNumber(num){
+  return{
+    type: types.RECORD,
+    payload: num
+  }
+}

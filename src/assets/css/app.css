@@ -16,6 +16,10 @@ body {
     text-align: center;
 }
 
+.app>h1{
+  font-size: 5em;
+}
+
 .app h1 span{
   animation: glow 3s linear infinite;
   /* text-shadow: 5px 5px 85px #EBE315; */
@@ -30,6 +34,7 @@ body {
 .guess{
   color: black;
 }
+
 @keyframes spin {
     from {
         transform: rotate(0deg);

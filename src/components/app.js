@@ -9,7 +9,7 @@ const App = () => (
     <div>
         <div className="app">
             <img src={logo} className="logo rotate"/>
-            <h1>Welcome to React <span className="redux" >Redux</span></h1>
+            <h1>React <span className="redux" >Redux</span></h1>
             <Guess />
         </div>
     </div>

@@ -1,4 +1,5 @@
 export default{
     NUMBER: 'pickNumber',
-    GUESS: 'guess'
+    GUESS: 'guess',
+    RECORD: 'recordNumber'
 }
