@@ -63,6 +63,31 @@ header h1{
   cursor: pointer;
 }
 
+.fa-expand{
+  float: right;
+  margin: 5px;
+  border: 1px solid black;
+  padding: 8px;
+  transform: rotateX(180deg);
+  cursor: pointer;
+}
+
+.fa-expand:hover{
+  animation: enlarge 2s linear infinite;
+}
+
+@keyframes enlarge {
+  0%{
+    font-size: 0.5em
+  },
+  50%{
+    font-size: 1em
+  },
+  100%{
+    font-size: 1.5em
+  }
+}
+
 @keyframes spin {
     from {
         transform: rotate(0deg);
