@@ -1,0 +1,27 @@
+@font-face {
+    font-family: blocky;
+    src: url(../fonts/blocky.ttf);
+}
+
+header{
+  padding: 30px 0 20px 0;
+  margin-bottom: 30px;
+  border: 1px solid aliceblue;
+}
+
+
+header h1{
+  font-family: blocky;
+  margin: 0 0 10px 0;
+  font-size: 5em;
+  color: aliceblue;
+}
+
+.lfz{
+  width: 100%;
+  margin-right: 20px;
+  text-align: right;
+}
+.lfz>img{
+  width: 50px;
+}

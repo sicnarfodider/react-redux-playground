@@ -1,0 +1,15 @@
+.content-title{
+  text-transform: capitalize;
+  margin: 20px;
+  border: none;
+  color: aliceblue;
+}
+
+.custom-control{
+  display: inline-block;
+  float: right;
+}
+
+.card-block ol{
+  clear: both;
+}
