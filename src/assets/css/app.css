@@ -42,6 +42,7 @@ header h1{
 }
 .nav-type{
   margin-bottom: 0;
+  padding: 0;
 }
 
 .nav-type>li{
