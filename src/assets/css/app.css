@@ -7,21 +7,60 @@ body {
     margin: 0;
 }
 
-.app {
-    background-color: #000;
-    color: #fff;
-    font-family: blocky;
-    font-size: 25px;
-    padding: 50px;
-    text-align: center;
+#main{
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  padding-bottom: 50px;
 }
 
-.app .logo {
-    height: 200px;
+header{
+  padding: 30px 0;
+  margin-bottom: 30px;
 }
+
+header, .content-summary, .content-detail{
+  border: 1px solid gray;
+}
+
+header h1{
+  margin: 0 0 10px 0;
+  font-size: 5em;
+}
+
+.main-bg-logo{
+  position: fixed;;
+  right: 40vw;
+  top: 20vh;
+
+}
+
+.lfz{
+  width: 15%;
+  float: right;
+  margin-right: 20px;
+}
+.nav-type{
+  margin-bottom: 0;
+}
+
+.nav-type>li{
+  list-style-type: none;
+  padding: 5px;
+  border: 1px solid #00000080;
+}
+
 
 .rotate {
     animation: spin 10s linear infinite;
+}
+
+.content-summary{
+  padding: 10px;
+}
+
+.content-summary > button{
+  cursor: pointer;
 }
 
 @keyframes spin {
