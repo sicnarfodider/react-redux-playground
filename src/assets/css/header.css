@@ -9,7 +9,6 @@ header{
   border: 1px solid aliceblue;
 }
 
-
 header h1{
   font-family: blocky;
   margin: 0 0 10px 0;
@@ -24,4 +23,15 @@ header h1{
 }
 .lfz>img{
   width: 50px;
+}
+
+.lfz>a{
+  text-decoration: none;
+  color: darkblue;
+}
+
+@media (max-width: 774px) {
+  header h1{
+    font-size: 2em;
+  }
 }
