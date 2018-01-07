@@ -9,7 +9,7 @@ export default props=>{
 
       <header className="mt-3 text-center">
         <h1> React Prototypes </h1>
-        <div className="lfz"><img src={lfz} /><span className="lfz mr-3">LearningFuze</span></div>
+        <div className="lfz"><img src={lfz} /><span className="lfz mr-3"><a href="http://lfzprototypes.com/full-immersion/general" title="go to LFZ PROTOTYPES HOME"> LearningFuze </a></span></div>
       </header>
 
   )

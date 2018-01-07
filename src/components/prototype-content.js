@@ -3,11 +3,11 @@ import PrototypeTwoIndex  from '../contentData/prototypes/prototype2';
 
 export default[
   {
-      name: "pam balam",
+      name: "bam balam",
       files:  PrototypeOneIndex
   }
     ,{
-        name: "ice coffee is tricky",
+        name: "ice coffee is tricky to make",
         files:  PrototypeTwoIndex
     }
 ];
