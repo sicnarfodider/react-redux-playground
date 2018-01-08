@@ -16,8 +16,8 @@ export default props=>{
 
             It helps you write applications that behave consistently, run in different environments (client, server, and native),
             and are easy to test. On top of that, it provides a great developer experience, such as live code editing combined with a time traveling debugger.
-            <footer className="text-right"><cite title="source">-redux.js.org</cite></footer>
         </p>
+        <footer className="text-right"><cite title="source">-redux.js.org</cite></footer>
         <h4> Links </h4>
         <ul className="link-holder">
           <li> <a className="resource-links" href="https://redux.js.org/" target="_blank"> <i className="fa fa-book mr-3" aria-hidden="true"></i>  Introduction </a> </li>
