@@ -1,6 +1,4 @@
 import React from 'react';
-import projects from './project-content';
-import prototypes from './prototype-content';
 import '../assets/css/content.css';
 
 
