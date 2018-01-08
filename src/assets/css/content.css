@@ -13,3 +13,22 @@
 .card-block ol{
   clear: both;
 }
+
+.link-holder li{
+  list-style-type: none;
+}
+.resource-links{
+  text-decoration: none;
+  display: inline-block;
+  color: #0051eb;
+}
+
+.resource-links:visited{
+  color: #263272;
+}
+
+.redux-header{
+  background-color: #8b44b0;
+  color: white;
+  text-transform: uppercase;
+}
