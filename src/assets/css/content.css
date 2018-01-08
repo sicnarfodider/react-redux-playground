@@ -8,8 +8,12 @@
 .custom-control{
   display: inline-block;
   float: right;
+  font-size: 18px;
+  font-weight: bold;
 }
-.card{
+
+
+.card, .card-title{
   border-radius: .5rem;
 }
 .card-block ol{

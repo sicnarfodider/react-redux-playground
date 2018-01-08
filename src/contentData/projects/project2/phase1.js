@@ -24,8 +24,8 @@ export default class Content extends React.Component{
            <h5 className="card-subtitle mb-3 muted">Prep instruction</h5>
            <label className="custom-control custom-checkbox">
              <input onClick={this.toggleComplete} type="checkbox" className="custom-control-input"/>
-             <span onClick={this.toggleComplete} className="custom-control-indicator"></span>
-             <span onClick={this.toggleComplete} className="custom-control-description">Mark Complete</span>
+             <span  className="custom-control-indicator"></span>
+             <span  className="custom-control-description">Mark Complete</span>
            </label>
            <ol>
                <li>Morbi in sem quis dui placerat ornare. Pellentesque odio nisi, euismod in, pharetra a, ultricies in, diam. Sed arcu. Cras consequat. </li>
