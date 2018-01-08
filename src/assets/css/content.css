@@ -9,7 +9,9 @@
   display: inline-block;
   float: right;
 }
-
+.card{
+  border-radius: .5rem;
+}
 .card-block ol{
   clear: both;
 }
@@ -32,4 +34,20 @@
   background-color: #8b44b0;
   color: white;
   text-transform: uppercase;
+}
+
+.hide{
+  display: none;
+}
+
+.custom-control-input:checked~.custom-control-indicator {
+  background-color: #02d81e;
+}
+.custom-control-input:focus~.custom-control-indicator {
+  -webkit-box-shadow: 0 0 0 1px #fff, 0 0 0 3px #02d81e;
+  box-shadow: 0 0 0 1px #fff, 0 0 0 3px #02d81e;
+}
+
+.complete{
+  background-color: lightgray;
 }

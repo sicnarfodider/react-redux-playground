@@ -61,6 +61,7 @@ body {
   color: white;
   text-transform: capitalize;
   background-color: transparent;
+  font-size: 17px;
 }
 
 .active{
