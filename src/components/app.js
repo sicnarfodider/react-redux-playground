@@ -1,7 +1,6 @@
 import React from 'react';
 import {Route} from 'react-router-dom';
 import Header from './header';
-import Nav from './nav';
 import Content from './content';
 import ReduxResource from '../contentData/resources/ReduxResource';
 import projects from './project-content';
@@ -13,15 +12,9 @@ import reactbg from '../assets/images/react.svg';
 
 
 export default class App extends React.Component{
-  constructor(props){
-    super(props)
-
-    this.state={
-      fullContent: false
-    }
-  }
 
   render(){
+    console.log(this.state)
     return(
       <div id="main">
           <div className="container">
@@ -31,11 +24,10 @@ export default class App extends React.Component{
                     <div className="nav-container col-lg-3">
                         <Nav projects={projects} prototypes={prototypes} resources={resources}/>
                     </div>
-                <Route path="/resources?" component={ReduxResource}/>
                 <Route path="/:type?/:content?" component={Content}/>
                 </div>
           </div>
       </div>
     )
   }
-}
+};
